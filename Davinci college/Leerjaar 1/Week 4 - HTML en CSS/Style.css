@@ -1,5 +1,12 @@
-.pagina{
-	margin:0 auto;
+body{
+	font-family: 'Roboto', sans-serif;
+	width: 40%;
+	margin: 0, auto;
+}
+
+.center{
+	position: absolute;
+	margin-left: 350px;	
 }
 
 h1{
@@ -11,3 +18,42 @@ p{
 	font-size: 20px;
 	line-height: 26px;
 }
+
+h4{
+	font-size: 32px;
+	line-height: 32px;
+}
+
+ul li {
+	font-size: 20px;
+	line-height: 26px;
+	padding: 10px;
+}
+
+ol li {
+	font-size: 20px;
+	line-height: 26px;
+	padding: 20px;
+}
+
+.gehaktimg{
+
+}
+
+.tipje{
+	background-color: #def6ed;
+	margin-top: 25px;
+	position: center;
+	border-radius: 4px;
+	height: 50px;
+}
+
+li a{
+	display: block;
+	width: 60px;
+	text-align: center;
+	border: 20px;
+}
+
+
+
