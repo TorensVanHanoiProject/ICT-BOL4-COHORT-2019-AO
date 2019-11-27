@@ -67,7 +67,7 @@ li a:hover {
 .ban{
   border-width: 1px;
   border-color: black;
- margin-top: 20px;
+ 
  margin-bottom: 80px;
  margin-right: auto;
  margin-left: auto;
@@ -79,3 +79,11 @@ li a:hover {
 
 }
 
+.text{
+  float: right;
+  margin-left:  700px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+ top: 60px;
+}
