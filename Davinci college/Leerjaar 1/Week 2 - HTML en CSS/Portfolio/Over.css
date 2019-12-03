@@ -7,7 +7,7 @@
 
 header
 {
-   background-image: url(pic1.jpg);
+   background-image: url(2.jpg);
    height: 100vh;
    background-size: cover;
    background-position: center;
@@ -100,13 +100,18 @@ h3{
 	color: white;
 	margin-top: 250px;
 	float: left;
-	text-shadow: 2px 2px #ff0000;
+	margin-left: 340px;
+	
 	
 }
 
 h4{
-	color: #ffffff;
-	text-shadow: 2px 2px black;
+	color: white;
+	
 		float: left;
 		margin-left: 340px;
+}
+
+.fotos{
+	
 }

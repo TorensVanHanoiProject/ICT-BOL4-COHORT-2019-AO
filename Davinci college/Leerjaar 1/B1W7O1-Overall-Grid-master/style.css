@@ -1,89 +1,125 @@
-font-family: 'Lato', sans-serif;
 
 
-.Pagina{
-  width: 1100px;
-}
-
-.logo{
-  margin-left: 100px;
-
-}
-
-
-header{
- background-image: url("img/header_bg.png");
-
-}
-
-main{
-  background-image: url("img/banner_bg.png");
-  margin-top: 30px;
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-
+/* Header */
+header {
+    background-color: #f4f5f7;
+    overflow: hidden;
+    min-height: 120px;
+    border-top: 8px solid #848490;
+    position: sticky;
+    top: 0;
 }
 
-li {
-  float: left;
-  display: inline;
-  margin-top: 12px;
- 
- }
-
-a {
-  display: block;
-   padding: 0px;
-  background-color: white;
-
+header nav ul {
+    position: relative;
+    top: 40px;
+    float: right;
+    margin-right: 300px;
+}
+header nav ul li {
+    display: inline;
+    padding: 0 30px 0 30px;
 }
 
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  margin-top: 40px;
-  text-decoration: none;
-  padding: 5px;
-  margin-left: 60px;
-
-
+header nav ul li a {
+    text-decoration: none;
+    color: #1a74c2;
+    transition: 0.3s;
 }
 
-li a:hover {
-  background-color: #CEF6F5;
+header nav ul li a:hover {
+    color: black;
+    transition: 0.3s;
+}
 
+header nav img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
 
 
-.ban{
-  border-width: 1px;
-  border-color: black;
- 
- margin-bottom: 80px;
- margin-right: auto;
- margin-left: auto;
-
-
+/* Business */
+#business {
+    background-image: url(banner_bg.png);
+    height: 500px;
+    width: 100%;
+    border-bottom: 100px solid black;
 }
 
-.achtergrond{
-
+#business img {
+    margin-top: 97px;
+    margin-left: 307px;
 }
 
-.text{
-  float: right;
-  margin-left:  700px;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  position: relative;
- top: 60px;
+#business #text {
+    float: right;
+    width: 30%;
+    margin-right: 20px;
+    margin-top: 90px;
+    color: white;
+}
+
+#business #text p {
+    line-height: 22px;
+}
+
+#business #text h2 {
+    font-size: 26px;
+}
+
+
+
+/* Sliders */
+#sliders {
+    color: black;
+    text-align: center;
+    margin-top: 85px;
+    height: 180px;
+}
+
+#sliders .slider {
+    display: inline;
+    padding: 0 50px 0 50px;
+}
+
+
+/* Slider-Text */
+#slider-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.slider-title {
+    display: inline-block;
+    padding: 0 120px 0 120px;
+}
+
+.slider-content {
+    width: 25%;
+    display: inline-block;
+}
+
+.slider-content p {
+    width: 91%;
+    line-height: 23px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #1a74c2;
+    overflow: hidden;
+    text-align: center;
+    color: white;
 }
