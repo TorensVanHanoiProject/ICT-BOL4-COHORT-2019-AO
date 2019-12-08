@@ -1,8 +1,20 @@
+
+
+body{
+  background: url(1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
 #game-container {
   border: 6px solid black;  
   display: grid;
   background-image: url(2.jpg);
-  height: 725px;  
+  height: 100%;  
   grid-template-columns: 200px 200px 200px 200px 200px;
   grid-template-rows: 200px 300px 225px;
 }
@@ -26,9 +38,10 @@ margin-right: 60px;
 border: 6px solid white;
 color: black;
 background-image: url(4.jpg);
-  
+  }
 
-
+.afbeelding1{
+background-image: url(1.jpg);
 }
 
 #button1{
@@ -68,7 +81,7 @@ height: 300px;
 }
 
 .button {
-  background-color: white;
+  background-color: black;
   border: none;
   color: white;
   padding: 26px 82px;
@@ -81,8 +94,8 @@ height: 300px;
   transition-duration: 0.4s;
   cursor: pointer;
   position: relative;
-  top: -450px;
   right: -600px;
+  top: 350px;
 
 }
 
@@ -100,14 +113,13 @@ font-family: 'Alata', sans-serif;
 
 h4{
   color: white;
-  font-family: 'Bangers', cursive;
+  font-family: 'Roboto', sans-serif;
 
 }
 
 h3{
-  color: white;
- 
- font-family: 'Lobster', cursive;
+  color: white; 
+  font-family: 'Roboto', sans-serif;
 }
 
 h5{

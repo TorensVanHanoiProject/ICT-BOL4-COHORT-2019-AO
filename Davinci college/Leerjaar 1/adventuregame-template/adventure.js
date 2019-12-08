@@ -15,41 +15,161 @@ function escape(){
 	button1.setAttribute('onclick','start()');
 	button2.style.display = 'none';
 	button3.style.display = 'none';
-	description.innerHTML = "<h2> Veel succes! <h3> Je wilde naar een festival in konya (stad in Turkije), maar je hebt perongeluk geboekt naar Kenia. <h4> Om te beginnen: klik op Start "
+	description.innerHTML = "<h3><br><br> Je wilde naar een festival in konya (stad in Turkije), maar je hebt perongeluk geboekt naar Kenia.<h2> Veel succes!  "
 
 }
 
 function start(){
-	description.innerHTML = "<h2> Je komt aan bij de Gate richting Kenia. <br><h3>je hebt dit zelf nog niet door.<h5> Het vliegtuig stijt op over 1 uur"
+	description.innerHTML = "<br><br><h3> Tijdens de vlucht kom je erachter dat je verkeerd hebt geboekt."
 	image.src = "5.jpg"
-	button1.innerHTML = "Slapen"
-	button1.setAttribute('onclick', 'Slapen()');
+	button1.innerHTML = "Ga verder"
+	button1.setAttribute('onclick', 'Ga()');
 	button2.style.display = 'inline-block';
-	button2.innerHTML = "Even eten";
-	button2.setAttribute('onclick', 'Eten()');
+	button2.innerHTML = "Probeer de vlucht te stoppen";
+	button2.setAttribute('onclick', 'Probeer()');
 }
 
-function Eten(){
-	description.innerHTML="<h3> Je hebt 2 keuzes<br><br> Het vliegtuig vertrekt over 55 minuten."
-	image.src = "6.jpg"
-	button1.innerHTML = "MCdonalds"
-	button1.setAttribute('onclick','MCdonalds()');
-	button2.style.display = 'inline-block';
-	button2.innerHTML = "Burger king"
-	button2.setAttribute('onclick', 'Burger King()');
+function Probeer(){
+
+	description.innerHTML = "<br><br><h3> Je hebt de mogelijkheid om de vlucht te stoppen"
+	image.src = "5.jpg"
+	button1.innerHTML = "Doe alsof je naar het ziekenhuis moet"
+	button1.setAttribute('onclick', 'Ziekenhuis()');
+	button2.style.display = 'none';
 
 }
 
-function MCdonalds(){
-	description.innerHTML="<h3> Je komt iemand tegen. <br><h5>Hij neemt dezelfde vlucht. <br><br> hij vraagt of je al ingeent bent voor de vlucht."
-	image.src = "7.jpg"
-	button1.innerHTML = "keuze1"
-	button1.setAttribute('onclick','MCdonalds()');
-	button2.style.display = 'inline-block';
-	button2.innerHTML = "Keuze2"
-	button2.setAttribute('onclick', 'Burger King()');
+function Ziekenhuis(){
+	description.innerHTML = "<br><br><h3> Helaas... Er vliegt een dokter mee. Hij ziet dat er niks aan de hand is. "
+	image.src = "9.jpg"
+	button1.innerHTML = "Ga Terug"
+	button1.setAttribute('onclick', 'start()');
+	button2.style.display = 'none';
 
 }
+
+
+function Ga (){
+	description.innerHTML = "<br><br><h3> Je Komt aan in Kenia. Je hebt niet genoeg geld om terug te boeken, het geld is net genoeg voor 2 dagen verblijf. "
+	image.src = "8.jpg"
+	button1.innerHTML = "Boek terug en ga naar Konya"
+	button1.setAttribute('onclick', 'Boek()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "Regel onderdak";
+	button2.setAttribute('onclick', 'Onderdak()');
+}
+
+function Boek(){
+	description.innerHTML = "<br><br><h3> Helaas... je hebt niet genoeg geld bij de hand. "
+	image.src = "10.jpg"
+	button1.innerHTML = "Ga terug"
+	button1.setAttribute('onclick', 'Ga()');
+	button2.style.display = 'none';
+	
+}
+
+
+function Onderdak(){
+	description.innerHTML = "<br><br><h3> Je hebt nu 2 dagen onderdak kunnen regelen."
+	button1.innerHTML = "Werken voor geld"
+	image.src = "11.jpg"
+	button1.setAttribute('onclick', 'Werken()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "Ga bedelen";
+	button2.setAttribute('onclick', 'Bedelen()');
+}
+
+function Werken(){
+	description.innerHTML = "<br><br><h3> Je hebt ervoor gekozen om te werken. Waar wil je werken?"
+	button1.innerHTML = "In een restaurant"
+	image.src = "12.jpg"
+	button1.setAttribute('onclick', 'Restaurant()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "als Safari-Gids";
+	button2.setAttribute('onclick', 'Gids()');
+}
+
+function Restaurant(){
+	description.innerHTML = "<br><br><h3> Je hebt ervoor gekozen om te werken in een restaurant. je hebt op 1 dag 200 euro kunnen verdienen"
+	button1.innerHTML = "In een restaurant"
+	image.src = "13.jpg"
+	button1.setAttribute('onclick', 'Restaurant()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "als Safari-Gids";
+	button2.setAttribute('onclick', 'Gids()');
+}
+
+
+
+
+
+
+
+
+
+function Bedelen(){
+	description.innerHTML = "<br><br><h3> Je hebt ervoor gekozen om te bedelen. Waar wil je bedelen"
+	button1.innerHTML = "in de stad"
+	button1.setAttribute('onclick', 'stad()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "op het platteland";
+	button2.setAttribute('onclick', 'platteland()');
+}
+
+function platteland(){
+	description.innerHTML = "<br><br><h3> Je hebt 8 uur lang gebedelt, maar je hebt 2 euro gekregen. dit is niet genoeg"
+	button1.innerHTML = "Ga werken"
+	button1.setAttribute('onclick', 'Werken()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "Ga verder met bedelen.";
+	button2.setAttribute('onclick', 'Bedelen2()');
+}
+
+function Bedelen2(){
+	description.innerHTML = "<br><br><h3> Je hebt niet genoeg geld kunnen krijgen. je hebt nog 1 dag voor onderdak."
+	button1.innerHTML = "Ga werken"
+	button1.setAttribute('onclick', 'Werken()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "Ga verder met bedelen.";
+	button2.setAttribute('onclick', 'Bedelen3()');
+}
+
+function Bedelen3(){
+	description.innerHTML = "<br><br><h3> Je hebt ervoor gekozen om door te gaan met bedelen. hierdoor heb je geen onderdak meer kunnen regelen. Game over."
+	button1.innerHTML = "Begin opnieuw"
+	button1.setAttribute('onclick', 'escape()');
+	button2.style.display = 'none';
+	
+}
+
+
+function stad(){
+	description.innerHTML = "<br><br><h3> Je hebt 5 uur lang gebedelt, maar je hebt 10 euro gekregen. dit is niet genoeg"
+	button1.innerHTML = "Ga werken"
+	button1.setAttribute('onclick', 'Werken()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "Ga verder met bedelen.";
+	button2.setAttribute('onclick', 'Bedelen2()');
+}
+
+function Bedelen2(){
+	description.innerHTML = "<br><br><h3> Je hebt niet genoeg geld kunnen krijgen. je hebt nog 1 dag voor onderdak."
+	button1.innerHTML = "Ga werken"
+	button1.setAttribute('onclick', 'Werken()');
+	button2.style.display = 'inline-block';
+	button2.innerHTML = "Ga verder met bedelen.";
+	button2.setAttribute('onclick', 'Bedelen3()');
+}
+
+function Bedelen3(){
+	description.innerHTML = "<br><br><h3> Je hebt ervoor gekozen om door te gaan met bedelen. hierdoor heb je geen onderdak meer kunnen regelen. Game over."
+	button1.innerHTML = "Begin opnieuw"
+	button1.setAttribute('onclick', 'escape()');
+	button2.style.display = 'none';
+	
+}
+
+
 
 
 escape();
