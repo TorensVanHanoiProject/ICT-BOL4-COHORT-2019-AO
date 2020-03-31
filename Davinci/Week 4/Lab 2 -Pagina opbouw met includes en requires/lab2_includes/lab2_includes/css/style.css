@@ -1,0 +1,86 @@
+body{
+  background-color: lightgray;
+}
+
+header{
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  float: left;
+  width: 85.5em;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#afbeelding1{
+  width: 10%;
+  height: 48px;  
+  float: left;  
+}
+
+h2{
+  font-family: 'Baloo Chettan 2', cursive;
+  color: black;
+  float: left;
+  position: relative;
+  left: 22em;
+
+}
+
+h3{
+  font-family: 'Baloo Chettan 2', cursive;
+  color: black;
+  float: left;
+  position: relative;
+  top: 3em;
+  line-height: 25px;
+
+}
+
+#afbeelding2{
+  width: 49%;
+  height: auto;
+  position: relative;
+  left: 25em;
+  top: 4em;
+}
+
+
+hr{
+    position: relative;
+    top: 4em;
+    background: black;
+    height: 1px;
+    width: 46em;
+    right: 10em;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
