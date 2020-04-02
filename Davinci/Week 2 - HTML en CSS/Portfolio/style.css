@@ -1,0 +1,97 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+header
+{
+   background-image: url(pic1.jpg);
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+*/
+}
+.main-nav {
+
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+	color: white;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family : "roboto", sans-serif;
+	font-size: 15px;
+}
+
+.main-nav li.active a
+{
+	border: 1px solid white;
+	color: white;
+
+}
+
+.main-nav li:hover 
+{
+	border: 1px solid white;
+	background-color: white;	
+	height: 20px;
+	transition: 0.5s;
+}
+
+
+
+
+.logo img
+{
+	width: 300px;
+	height: auto;
+	float: left;
+	margin-left: 450px;
+	margin-top: 250px;
+	border: 2px solid white;
+
+}
+
+body
+{
+	font-family: monospace;
+}
+
+.row 
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+h1
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 70px;
+	text-align: center;
+	margin-top: 125px;
+}
+
+h1{
+	font-family: "Dosis", sans-serif
+	color: white;
+	margin-top: 70px;
+}
+
+hr{
+	width: 50%;
+	margin: 30px auto;
+	border: 1.5px solid #fff;
+}

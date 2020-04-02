@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body{
+  background-image: url('sneeuw.jpg');
+  background-size: cover;
+}
+
+#woord{
+  position: relative;
+  left: 560px;
+  top: 40px;
+  border-radius: 1px;
+  border-color: black;
+  height: 30px;
+  width: 260px;
+}
+
+
+ 
+.invisible {
+  display: none;
+}
+ 
+.visible {
+  display: block;
+}
+ 
+ 
+#textboven {
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Arial', sans-serif;
+  margin: 10px; 
+}
+
+#goedekleur {
+  color: white;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  font-size: 20px;
+}
+ 
+#raden {
+  border: 1px black solid;
+  padding: 5px;
+  margin: 10px auto;
+  display: block;
+  
+}
+ 
+#container {
+  margin: auto;
+  width:400px;
+}
+ 
+.correct {
+  background: green;
+}
+ 
+.wrongplace {
+  background: yellow;
+}
+ 
+.default {
+  background: white;
+}
+ 
+.square {
+  vertical-align:top;
+  margin-top: 4px;
+  border: 2px black solid;
+  border-radius: 5px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Lato', sans-serif;
+
+}66666666
+
+
+#canvas{
+    position:absolute;
+    top:20;
+    left:650;
+   
+}
+
+
+
+
+
+
+
+
+.svg-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  left: 560px;
+  top: 33px;
+  }
+
+
+#shape {
+  stroke-width: 9px;
+  fill: transparent;
+  stroke: white;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+
+
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+#text a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 7px;
+  stroke-dashoffset: 0;
+  stroke: white;
+}
+
+
+
+
+
+
+
+

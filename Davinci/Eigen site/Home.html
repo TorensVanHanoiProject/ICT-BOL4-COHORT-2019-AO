@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Business Website</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+</head>
+<body>
+  
+    <header>
+      <div class="row">
+        <div class="logo">
+          <img src="logo1.png">
+        </div>
+           <ul class="main-nav">
+               <li class="active"><a href="Home.html"> HOME </a> </li>
+         <li><a href="Beats.html"> EVENTS2 </a> </li>
+               <li><a href="About.html"> ABOUT </a> </li>
+         
+              <li><a href="News.html"> NEWS </a> </li>
+               <li><a href="Prices.html"> PICTURES </a> </li>
+                    <li><a href="registration.html"> SIGN UP </a> </li>
+           </ul>
+
+ </div>
+</header>
+
+<main>
+<div class="hero">
+  <!--<h1>Are you ready?</h1> -->
+
+  <!--<div class="button">
+    <a href="" class="btn btn-one"> Watch Video</a>
+    <a href="" class="btn btn-two"> Explore More </a>
+  -->
+
+  </div> 
+</div>
+
+<div class="tijd">
+  <p>Barcode website</p>
+  <h2>COMING SOON</h2>
+
+  <hr>
+  <p id="launch"></p>
+
+</div>
+
+
+    </main>
+
+
+
+</body>
+
+<script type="text/javascript">
+  
+var countDownDate = new Date ("sept 12, 2019 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date ().getTime(); 
+
+  var distance = countDownDate - now;
+
+
+  var days = Math.floor (distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 *60 * 60));
+  var minutes = Math.floor(( distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("launch").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  if (distance <0) {
+    clearInterval(x);
+    document.getElementById("launch").innerHTML = "Expired";
+  }
+}, 1000);
+
+
+
+
+
+
+</script>
+
+
+
+
+</html>
+
+
